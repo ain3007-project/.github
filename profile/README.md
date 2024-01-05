@@ -9,6 +9,12 @@ This term project has been done as a part of the course AIN3007 - Deep Learning 
 - İclal Sönmez [github](https://github.com/iclalsonmez) [huggingface](https://huggingface.co/iclallalala)
 - Alper Çakır [github](https://github.com/Alperitoo) [huggingface](https://huggingface.co/Alperitoo)
 
+# Github Repos
+
+- [ain3007-project/project-utils](https://github.com/ain3007-project/project-utils): This is a python package that contains utility functions for our project.
+- [ain3007-project/preprocessing-data](https://github.com/ain3007-project/preprocessing-data): This repo contains the jupyter notebooks that we used to preprocess the data.
+
+
 # Huggingface Repos
 
 Our [huggingface account](https://huggingface.co/ain3007-project) contains datasets, models and spaces.
