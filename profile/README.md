@@ -36,3 +36,14 @@ We have used the following datasets in our project. Most of these links are priv
 
 ### Processed datasets
 
+2000 x 2000 thumbnails with original aspect ratio. (So there are images with shape 2000x1643, 2000x2000, 1445x2000 etc.)
+
+- [ain3007-project/dataset-thumbnails-2000](https://huggingface.co/datasets/ain3007-project/dataset-thumbnails-2000): Training dataset
+- [ain3007-project/test-dataset-thumbnails-2000](https://huggingface.co/datasets/ain3007-project/test-dataset-thumbnails-2000): Test dataset
+- [ain3007-project/panda-dataset-thumbnails-2000](https://huggingface.co/datasets/ain3007-project/panda-dataset-thumbnails-2000): Panda dataset
+
+512 x 512 thumbnails with white padding to make them square.
+
+- [ain3007-project/dataset-thumbnails-512-padded-white](https://huggingface.co/datasets/ain3007-project/dataset-thumbnails-512-padded-white): Training dataset
+- [ain3007-project/test-dataset-thumbnails-512-padded-white](https://huggingface.co/datasets/ain3007-project/test-dataset-thumbnails-512-padded-white): Test dataset
+- [ain3007-project/panda-dataset-thumbnails-512-padded-white](https://huggingface.co/datasets/ain3007-project/panda-dataset-thumbnails-512-padded-white): Panda dataset
