@@ -33,7 +33,7 @@ jobs:
         
       - name: Push the readme file to huggingface
         run: |
-          huggingface-cli upload ain3007-project/README profile/README.md . --repo-type=space
+          huggingface-cli upload ain3007-project/README profile/README.md README.md --repo-type=space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
 
