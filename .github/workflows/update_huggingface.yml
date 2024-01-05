@@ -1,0 +1,39 @@
+name: Update HuggingFace organization readme
+
+
+# update huggingface organization readme according to profile/README.md
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  update_huggingface:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install huggingface-hub[cli]
+
+      - name: Add huggingface-readme-header.md file to the beginning of the profile/README.md
+        run: |
+          cat profile/huggingface-readme-header.md profile/README.md > profile/README.md.tmp
+          mv profile/README.md.tmp profile/README.md
+        
+      - name: Push the readme file to huggingface
+        run: |
+          huggingface-cli upload ain3007-project/README profile/README.md . --repo-type=space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+
